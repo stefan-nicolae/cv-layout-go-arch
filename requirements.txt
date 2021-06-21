@@ -1,0 +1,9 @@
+Requirements:
+- well-formed HTML doc
+- external stylesheet
+- please use semantic HTML tags (inputs, button, img etc.)
+- responsive layout
+- for all icons font-awesome should be used (social media icons, magnifier etc)
+- useful info:
+-> fonts: Open Sans, Skia (or similar)
+-> color codes: #2b2b2b (dark grey), #3d3d3d(lighter grey), #c09c78 (orange shade)
