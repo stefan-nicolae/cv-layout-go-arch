@@ -190,7 +190,9 @@ main section h2 {
 main section h1 span {
     color: #c09c78;
 }
- 
+
+/* putin dezorganizat codul asa cu media queries raspandite in tot CSS-ul,,de obicei pornim cu desktop-ul care e default si pt care nu punem query, iar apoi coboram pe breakpoints in jos,,tu le ai si raspndite si duplicate, putina atentie aici, te rog */
+/* si aici eu vad doar implementare mobile si nu am o rezolutie de mobile */
 @media (min-width: 1200px) {
     main > div {
         display: flex;
