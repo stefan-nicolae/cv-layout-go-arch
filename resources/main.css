@@ -10,11 +10,8 @@ html, body {
 
 .container {
     font-family: 'Open Sans', sans-serif;
-    /* background-color: #2b2b2b; */
     height: 100vh;
 }
-
-/*Header start*/
 
 header {
     background-image: url(../assets/bg-header.jpg);
@@ -102,64 +99,6 @@ header {
     font-size: 10px;
 }
 
-/* @media (max-width: 899px) {
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-} */
-
-@media (min-width: 900px) {
-    .title h1 {
-        font-size: 40px;
-        margin-left: 30px;
-        margin-right: 15px;
-    }
-
-    .projects {
-        width: initial;
-        margin-top: 150px;
-        margin-right: 50px;
-        font-size: 30px;
-    }
-
-    .title > div > a {
-        font-size: 25px;
-    }
-
-    #line {
-        font-size: 30px;
-        padding: 5px 0;
-    }
-
-    header {
-        height: 400px;
-    }
-
-    .dropdown > .iconify {
-        display: none;
-    }
-
-    .dropdown {
-        padding-top: 20px;
-    }
-    
-    .dropdown-content {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        width: 50%;
-        padding-right: 40px;
-    }
-    
-    .dropdown-content a {
-        font-size: 20px;
-    }
-}
-
-/*Header end*/
-
-/*Main start*/
-
 main section {
     height: 180px;
     background-size: 100%;
@@ -190,58 +129,6 @@ main section h2 {
 main section h1 span {
     color: #c09c78;
 }
-
-/* putin dezorganizat codul asa cu media queries raspandite in tot CSS-ul,,de obicei pornim cu desktop-ul care e default si pt care nu punem query, iar apoi coboram pe breakpoints in jos,,tu le ai si raspndite si duplicate, putina atentie aici, te rog */
-/* si aici eu vad doar implementare mobile si nu am o rezolutie de mobile */
-@media (min-width: 900px) {
-    main > div {
-        display: flex;
-        width: 100%;
-    }
-
-    main > div > section:last-of-type {
-        flex-grow: 1;
-    }
-
-    main section {
-        height: 400px;
-        background-size: cover;
-        background-position: left;
-        width: 33%;
-        position: relative;
-    }
-
-    main section h1 {
-        position: absolute;
-        top: 0;
-        left: 0;
-        text-align: left;
-        padding: 10px 20px;
-    }
-
-    main section h1 span {
-        color: white;
-    }
-
-    main section h1 span::before {
-        content:"\a";
-        white-space: pre;
-    }
-
-    main section h2 {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        margin: 20px 20px;
-        writing-mode: vertical-lr;
-        text-orientation: sideways-right;
-        transform: rotate(-180deg);
-    }
-}
-
-/*Main end*/
-
-/*Form start*/
 
 form {
     background-color: #2b2b2b;
@@ -297,47 +184,6 @@ form > a  {
     display: none;
 }
 
-@media (min-width: 900px) {
-    form input, textarea {
-        width: 200px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    form input {
-        height: 50px;
-    }
-
-    form textarea {
-        height: 120px;
-    }
-
-    form > div {
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    form button {
-        align-self: center;
-    }
-
-    form > a {
-        display: inline-block;
-        text-align: center;
-        text-decoration: none;
-        color: white;
-        padding: 10px 20px;
-        background-color: #3d3d3d;
-        align-self: center;
-        border-radius: 20px;
-        margin: 50px;
-    }
-}
-
-/*Form end*/
-
-/*Menu start*/
-    
 menu {
     display: none;
     margin: 0;
@@ -360,7 +206,6 @@ menu h1 {
     float: left;
     margin: 0;
     font-size: 12px;
-    /* margin-left: 10px; */
     padding: 10px;
     margin-left: -10px;
 }
@@ -421,4 +266,129 @@ menu section:last-of-type div:last-of-type {
     border-left: solid 1px lightgray;
 }
 
-/*Menu end*/
+@media (min-width: 900px) {
+    .title h1 {
+        font-size: 40px;
+        margin-left: 30px;
+        margin-right: 15px;
+    }
+
+    .projects {
+        width: initial;
+        margin-top: 150px;
+        margin-right: 50px;
+        font-size: 30px;
+    }
+
+    .title > div > a {
+        font-size: 25px;
+    }
+
+    #line {
+        font-size: 30px;
+        padding: 5px 0;
+    }
+
+    header {
+        height: 400px;
+    }
+
+    .dropdown > .iconify {
+        display: none;
+    }
+
+    .dropdown {
+        padding-top: 20px;
+    }
+    
+    .dropdown-content {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 50%;
+        padding-right: 40px;
+    }
+    
+    .dropdown-content a {
+        font-size: 20px;
+    }
+    
+    main > div {
+        display: flex;
+        width: 100%;
+    }
+
+    main > div > section:last-of-type {
+        flex-grow: 1;
+    }
+
+    main section {
+        height: 400px;
+        background-size: cover;
+        background-position: left;
+        width: 33%;
+        position: relative;
+    }
+
+    main section h1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: left;
+        padding: 10px 20px;
+    }
+
+    main section h1 span {
+        color: white;
+    }
+
+    main section h1 span::before {
+        content:"\a";
+        white-space: pre;
+    }
+
+    main section h2 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 20px 20px;
+        writing-mode: vertical-lr;
+        text-orientation: sideways-right;
+        transform: rotate(-180deg);
+    }
+
+    form input, textarea {
+        width: 200px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    form input {
+        height: 50px;
+    }
+
+    form textarea {
+        height: 120px;
+    }
+
+    form > div {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    form button {
+        align-self: center;
+    }
+
+    form > a {
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+        background-color: #3d3d3d;
+        align-self: center;
+        border-radius: 20px;
+        margin: 50px;
+    }
+}
